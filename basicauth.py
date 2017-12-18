@@ -17,6 +17,7 @@ headers = {'content-type': 'application/json'}
 Path-to-Auth = /api/vi/auth/
 Path-to-user-roles = /api/v1/configuration/users/user-roles/
 
+# Test 
 hostname = input("Hostname :")
 username = input("Username :")
 password = input("password")
