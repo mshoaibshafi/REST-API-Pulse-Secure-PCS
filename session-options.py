@@ -5,7 +5,7 @@
 import requests
 import logging 
 import json
-import os
+import os,sys
 
 # Variable
 Path_to_Auth = "/api/v1/auth"
@@ -18,6 +18,11 @@ headers = {'content-type': 'application/json'}
 Hostname = input("Hostname : ")
 username = input("Username : ")
 password = input("password : ")
+
+if Hostname == "" or username == "" or password == "":
+   print ("\nBlank Input -- Please re-enter Hostname / username or password\n")
+   sys.exit(1)
+
 
 # Functions 
 def get_session_timeouts(client,path):
