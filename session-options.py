@@ -42,6 +42,7 @@ except OSError:
 r = requests.get('https://'+Hostname+Path_to_Auth, auth=(username, password), headers=headers)
 d = r.json()
 api_key = (d['api_key'])
+print (api_key)
 
 # Open file to add Start HTML tags 
 f = open(Local_File_session_options, 'a')
